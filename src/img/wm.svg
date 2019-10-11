@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259" height="290" viewBox="0 0 259 290">
+  <defs>
+    <filter id="Union_1" x="0" y="0" width="259" height="290" filterUnits="userSpaceOnUse">
+      <feOffset dy="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_13" x="18" y="37" width="224" height="229" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_14" x="18" y="42" width="224" height="229" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_15" x="18" y="47" width="224" height="229" filterUnits="userSpaceOnUse">
+      <feOffset dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_11" x="0" y="51" width="259" height="235" filterUnits="userSpaceOnUse">
+      <feOffset dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="wm" transform="translate(-1417 -379)">
+    <g id="Group_6" data-name="Group 6" transform="translate(766 0)">
+      <g transform="matrix(1, 0, 0, 1, 651, 379)" filter="url(#Union_1)">
+        <path id="Union_1-2" data-name="Union 1" d="M710-783v-241h47v-16a15,15,0,0,1,15-15H891a15,15,0,0,1,15,15v16h45v241Z" transform="translate(-701 1065)" fill="#f9c37a"/>
+      </g>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="206" height="211" transform="translate(678 424)" fill="#fff"/>
+      <g transform="matrix(1, 0, 0, 1, 651, 379)" filter="url(#Rectangle_13)">
+        <rect id="Rectangle_13-2" data-name="Rectangle 13" width="206" height="211" transform="translate(27 49)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 651, 379)" filter="url(#Rectangle_14)">
+        <rect id="Rectangle_14-2" data-name="Rectangle 14" width="206" height="211" transform="translate(27 54)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 651, 379)" filter="url(#Rectangle_15)">
+        <rect id="Rectangle_15-2" data-name="Rectangle 15" width="206" height="211" transform="translate(27 59)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 651, 379)" filter="url(#Rectangle_11)">
+        <rect id="Rectangle_11-2" data-name="Rectangle 11" width="241" height="217" transform="translate(9 65)" fill="#f9c37a"/>
+      </g>
+    </g>
+    <text id="Web_and_Mobile_Design." data-name="Web and Mobile Design." transform="translate(1456 494)" fill="#f0fffe" font-size="27" font-family="SegoeUI-Italic, Segoe UI" font-style="italic"><tspan x="38.635" y="29">Web and </tspan><tspan x="5.293" y="65">Mobile Design.</tspan></text>
+  </g>
+</svg>

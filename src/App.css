@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --firstBg: #f9c37a;
+  --secondBg: #f0fffe;
+  --white: #ffffff;
+  --mainGreen: #005d57;
+  --shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--firstBg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--mainGreen);
+}
+
+.firstBg {
+  background-color: var(--secondBg);
+  width: 100vw;
+  height: 48em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+.N-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar-container {
+  background-color: var(--white);
+  /* z-index: 3; */
+}
+
+.navbar {
+  display: flex;
+  box-shadow: var(--shadow);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.8em;
+}
+
+.image-container {
+  display: none;
+}
+
+.navbar h1 {
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+
+.btns {
+  color: var(--firstBg);
+  font-size: 1.5em;
+  transition: all 0.5s ease-in-out;
+}
+
+.btns:hover {
+  color: var(--mainGreen);
+}
+
+.navlist {
+  margin: auto;
+  background-color: var(--white);
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.shownavlist {
+  height: 50vh;
+}
+
+.navlist ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--firstBg);
+  width: 85vw;
+  height: 80%;
+}
+
+.navlist li {
+  text-align: center;
+  list-style-type: none;
+}
+
+.navlist a {
+  display: block;
+  width: 15em;
+  height: 3em;
+  padding-top: 1em;
+  background-color: var(--white);
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.6em;
+  text-decoration: none;
+  color: var(--mainGreen);
+  font-style: italic;
+}
+
+.navlist a:hover {
+  background-color: var(--secondBg);
+}
+/* end of navbar */
+
+/* contentplate */
+.contentplate {
+  height: 41.5em;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  box-shadow: var(--shadow);
+  overflow: auto;
+}
+/* end of contentplate */
+
+/* Home */
+/* greeting */
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0.6em;
+  height: 35vh;
+}
+
+.greeting h1 {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.greeting p {
+  line-height: 1.5em;
+}
+/* end of greeting */
+
+/* form */
+.form {
+  width: 30em;
+  height: 33em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="email"] {
+  background-color: var(--secondBg);
+  border: none;
+  width: 23em;
+  height: 3em;
+  padding: 1.2em;
+  border-radius: 0.5em;
+}
+
+textarea {
+  background-color: var(--secondBg);
+  border: none;
+  width: 22em;
+  height: 24em;
+  padding: 1em;
+  border-radius: 0.5em;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+/* end of form */
+/* end of Home */
+
+/* MyPortfolio */
+.folios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* Folios */
+.Folios ul {
+  list-style-type: none;
+}
+
+.Folios li {
+  margin: 2em;
+}
+
+.Folios img {
+  width: 9em;
+}
+/* end of Folios */
+
+.foliolayout {
+  width: 100%;
+  height: 90%;
+
+  align-items: center;
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-gap: 2em;
+}
+
+.img-con {
+  margin: 0 auto;
+}
+
+.imge {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Layout */
+.imge {
+  background-color: var(--secondBg);
+  width: 11em;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.imge:hover {
+  background-color: #fff1e0;
+  box-shadow: 5px 6px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imgs {
+  width: 100%;
+  height: 100%;
+}
+
+/* end of Layout */
+
+/* SingleArtwork */
+.single-art {
+  width: 95%;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* end of SingleArtwork */
+
+/* ArtDisplay */
+.art-display {
+  width: 100%;
+  height: 60%;
+  /* padding: 1em; */
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.display {
+  width: 20em;
+  margin: auto;
+}
+
+.display img {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+/* end of ArtDisplay */
+
+/* ArtDescription */
+.art-description {
+  width: 100%;
+  height: 40%;
+  background-color: var(--secondBg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 55%;
+}
+
+.description p {
+  text-align: left;
+  padding: 0.5em;
+  font-size: 0.89em;
+}
+
+.description h4 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/*end of ArtDescription */
+
+/* end of MyPortfolio */
+
+/* contact */
+
+/* end of contact */
+
+/* about */
+.abcon {
+  padding: 1.2em;
+  line-height: 1.3em;
+}
+
+/* end of about */
+
+@media screen and (min-width: 425px) {
+  .navbar {
+    padding: 0.8em 2em;
+  }
+
+  .navlist a {
+    width: 20em;
+  }
+
+  .greeting h1 {
+    font-size: 2.3em;
+  }
+
+  textarea {
+    width: 90%;
+    height: 25em;
+  }
+
+  .Folios img {
+    width: 10em;
+  }
+
+  .imge {
+    width: 13em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 0.8em 3em;
+  }
+
+  .navlist a {
+    width: 25em;
+  }
+
+  .greeting h1 {
+    font-size: 2.8em;
+  }
+
+  textarea {
+    width: 40em;
+    height: 21em;
+  }
+
+  .Folios ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Folios img {
+    width: 13em;
+  }
+
+  .foliolayout {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .firstBg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.6em auto;
+    width: 96vw;
+    height: 93vh;
+  }
+
+  .N-container {
+    position: static;
+    width: 20%;
+    height: 100%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--shadow);
+  }
+
+  .navbar-container {
+    margin-top: 3em;
+  }
+
+  .navbar h1 {
+    font-size: 1.8em;
+  }
+
+  .navbar {
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 9em;
+    padding: 0;
+  }
+
+  .image-container {
+    display: initial;
+    width: 5em;
+    height: 5em;
+    border-radius: 3em;
+    margin-bottom: 2em;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .btns {
+    display: none;
+  }
+
+  .navlist {
+    height: 50vh;
+    margin-bottom: 8em;
+    width: 85%;
+  }
+
+  .navlist a {
+    width: 13vw;
+    height: 3em;
+  }
+
+  .form {
+    height: 30em;
+  }
+
+  textarea {
+    height: 21em;
+  }
+  .Folios img {
+    width: 11em;
+  }
+
+  .Folios li {
+    margin: 3em;
+  }
+
+  .contentplate {
+    height: 70vh;
+    width: 70vw;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .foliolayout {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 2em;
+  }
+
+  .single-art {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .art-display {
+    width: 120%;
+    height: 100%;
+  }
+
+  .art-description {
+    width: 50%;
+    height: 100%;
+  }
+}
